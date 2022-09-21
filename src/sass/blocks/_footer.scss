@@ -1,0 +1,264 @@
+footer {
+    margin-top: 104px;
+    margin-bottom: 39px;
+
+    @include pc {
+        margin-top: 80px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+    }
+
+    .footer {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 257px;
+
+            @include pc {
+                gap: 150px;
+            }
+
+            @include laptop {
+                gap: 35px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            justify-content: space-between;
+            gap: 54px;
+
+            @include pc {
+                gap: 35px;
+            }
+
+            @include laptop {
+                justify-content: center;
+            }
+
+            @include mobile-small {
+                flex-wrap: wrap;
+            }
+
+            &-item {
+                max-width: 112px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @include pc {
+                    max-width: 157px;
+                }
+
+                @include laptop {
+                    align-items: center;
+                }
+            }
+        }
+
+        &__title {
+            font-family: $pt-fonts;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 120%;
+            color: #212121;
+            margin-bottom: 24px;
+
+            @include tablet {
+                font-size: 15px;
+            }
+        }
+
+        &__list {
+            list-style-type: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+
+        &__link {
+            margin-bottom: 11px;
+            text-align: center;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: none;
+                font-family: $roboto-fonts;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #616161;
+                transition: all 0.6s;
+                &:hover {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        &__contacts {
+            max-width: 235px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            @include laptop {
+                align-items: center;
+            }
+        }
+
+        &__adresses {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+
+            @include laptop {
+                align-items: center;
+            }
+
+            @include tablet {
+                gap: 14px;
+            }
+        }
+
+        &__contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+
+            &-click {
+                text-decoration: none;
+                font-family: $pt-fonts;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #212121;
+
+                &:hover {
+                    color: $blue;
+                    text-decoration: underline;
+                }
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        &__social {
+            margin: 45px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            max-width: 111px;
+        }
+
+        &__copyright {
+            margin-top: 21px;
+            display: flex;
+            justify-content: space-between;
+
+            @include mobile-small {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+        &__company {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 291px;
+            gap: 10px;
+
+            &-rights {
+                font-family: $pt-fonts;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #7e92b3;
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+
+            &-name {
+                font-family: $pt-fonts;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 140%;
+                color: #6c7e99;
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        &__made {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 201px;
+            gap: 8px;
+
+            &-with {
+                font-family: $pt-fonts;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                color: #7e92b3;
+
+                @include mobile {
+                    font-size: 11px;
+                }
+
+                span {
+                    font-family: "Font Awesome 5 Free";
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 13px;
+                    line-height: 120%;
+                    color: #eb6453;
+
+                    @include mobile {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            &-by {
+                font-family: $pt-fonts;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 140%;
+                color: #6c7e99;
+
+                @include mobile {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,233 @@
+.testimonial {
+    margin-top: 104px;
+
+    @include pc {
+        margin-top: 80px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+    }
+
+    &__carousel {
+        position: relative;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        // margin-right: 30px;
+
+        @include mobile-small {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__descr {
+        max-width: 462px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include mobile-small {
+            align-items: center;
+        }
+    }
+
+    &__guote {
+        width: 65px;
+        height: 65px;
+        display: block;
+
+        @include laptop {
+            width: 45px;
+            height: 45px;
+        }
+
+        @include tablet {
+            width: 35px;
+            height: 35px;
+        }
+
+        @include mobile {
+            width: 30px;
+            height: 30px;
+        }
+
+        @include mobile-small {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__feedback {
+        margin-top: 39px;
+        font-family: $roboto-fonts;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        color: #424242;
+
+        span {
+            color: #005dff;
+        }
+
+        @include laptop {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        @include tablet {
+            font-size: 15px;
+            margin-top: 12px;
+        }
+
+        @include mobile-small {
+            font-size: 13px;
+            text-align: center;
+        }
+    }
+
+    &__name {
+        margin-top: 38px;
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #757575;
+
+        @include tablet {
+            font-size: 15px;
+        }
+
+        @include mobile {
+            margin-top: 10px;
+            font-size: 10px;
+        }
+    }
+
+    &__profession {
+        margin-top: 7px;
+        font-family: $pt-fonts;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #757575;
+
+        @include tablet {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        @include mobile {
+            margin-top: 0px;
+            font-size: 10px;
+        }
+    }
+
+    &__img {
+        @include laptop {
+            width: 50%;
+            height: 50%;
+        }
+
+        @include mobile {
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    .slick-slide {
+        display: flex;
+        // margin-left: 100px;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        border: none;
+        background: none;
+        z-index: 10;
+
+        img {
+            width: 40px;
+            height: 40px;
+
+            @include laptop {
+                width: 35px;
+                height: 35px;
+            }
+
+            @include tablet {
+                width: 30px;
+                height: 30px;
+            }
+
+            @include mobile {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    .slick-prev {
+        top: 562px;
+        left: 0px;
+
+        @include laptop {
+            top: 319px;
+        }
+
+        @include tablet {
+            top: 234px;
+            padding: 0;
+        }
+
+        @include mobile {
+            top: 176px;
+        }
+
+        @include mobile-small {
+            top: 265px;
+        }
+    }
+
+    .slick-next {
+        top: 562px;
+        left: 100px;
+
+        @include laptop {
+            top: 319px;
+        }
+
+        @include tablet {
+            top: 234px;
+            padding: 0;
+            left: 70px;
+        }
+
+        @include mobile {
+            top: 176px;
+        }
+
+        @include mobile-small {
+            top: 265px;
+            left: 279px;
+        }
+    }
+
+    // .slick-slide {
+    //     // .testimonial__img {
+    //     //     width: 100px;
+    //     // }
+    // }
+}

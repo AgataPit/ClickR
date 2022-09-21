@@ -1,0 +1,199 @@
+.prices {
+    background: #fafcff;
+    margin-top: 104px;
+    padding-top: 80px;
+
+    @include pc {
+        margin-top: 80px;
+        padding-top: 40px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+        padding-top: 30px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+    }
+
+    &__cards {
+        margin-top: 61px;
+        display: flex;
+        justify-content: space-between;
+
+        @include pc {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        @include tablet {
+            margin-top: 44px;
+        }
+
+        @include mobile-small {
+            margin-top: 25px;
+        }
+    }
+
+    &__card {
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // max-width: 369px;
+        // width: 100%;
+        border-radius: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &_blue {
+            background: $light-blue;
+        }
+
+        &_green {
+            background: $light-green;
+        }
+
+        &_orange {
+            background: $light-orange;
+        }
+
+        @include pc {
+            align-items: center;
+        }
+
+        @include laptop {
+            padding: 40px;
+        }
+
+        @include tablet {
+            padding: 35px;
+        }
+
+        @include mobile-small {
+            padding: 15px;
+        }
+    }
+
+    &__level {
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #616161;
+
+        @include mobile-small {
+            font-size: 15px;
+        }
+    }
+
+    &__cost {
+        margin-top: 16px;
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 57px;
+        line-height: 120%;
+
+        &_blue {
+            color: $blue;
+        }
+
+        &_green {
+            color: $green;
+        }
+
+        &_orange {
+            color: $orange;
+        }
+
+        @include tablet {
+            margin-top: 10px;
+            font-size: 50px;
+        }
+
+        @include mobile-small {
+            margin-top: 5px;
+            font-size: 35px;
+        }
+    }
+
+    &__period {
+        font-family: $roboto-fonts;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+
+        &_blue {
+            color: $blue;
+        }
+
+        &_green {
+            color: $green;
+        }
+
+        &_orange {
+            color: $orange;
+        }
+
+        @include mobile-small {
+            font-size: 12px;
+        }
+    }
+
+    &__list {
+        margin-top: 48px;
+        padding: 0;
+        margin-bottom: 0;
+
+        @include tablet {
+            margin-top: 25px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-img {
+            margin-right: 8px;
+        }
+
+        &-descr {
+            font-family: $roboto-fonts;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: #212121;
+
+            @include tablet {
+                font-size: 15px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    &__btn {
+        margin: 48px auto 0 auto;
+
+        @include tablet {
+            margin: 30px auto 0 auto;
+        }
+
+        @include mobile-small {
+            margin: 20px auto 0 auto;
+        }
+    }
+}

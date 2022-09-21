@@ -1,0 +1,107 @@
+.faq {
+    margin-top: 104px;
+
+    @include pc {
+        margin-top: 80px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+    }
+
+    &__content {
+        margin-top: 61px;
+        display: flex;
+        justify-content: space-between;
+        gap: 83px;
+
+        @include tablet {
+            margin-top: 40px;
+        }
+
+        @include mobile {
+            gap: 28px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+
+        @include laptop {
+            gap: 36px;
+        }
+
+        @include mobile-small {
+            gap: 20px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 529px;
+    }
+
+    &__question {
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+
+        &_blue {
+            color: $blue;
+        }
+
+        &_green {
+            color: $green;
+        }
+
+        &_orange {
+            color: $orange;
+        }
+
+        @include laptop {
+            font-size: 26px;
+            line-height: 118%;
+        }
+
+        @include tablet {
+            font-size: 23px;
+            line-height: 110%;
+        }
+
+        @include mobile-small {
+            font-size: 15px;
+        }
+    }
+
+    &__answer {
+        margin-top: 30px;
+        font-family: $roboto-fonts;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #212121;
+
+        @include tablet {
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        @include mobile-small {
+            font-size: 12px;
+        }
+    }
+}

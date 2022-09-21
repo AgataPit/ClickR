@@ -1,0 +1,58 @@
+.header {
+    margin-top: 108px;
+
+    @include pc {
+        margin-top: 80px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+    }
+
+    &__text {
+        margin-top: 22px;
+        font-family: $roboto-fonts;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #757575;
+
+        @include tablet {
+            font-size: 15px;
+        }
+
+        @include mobile-small {
+            margin-top: 12px;
+            font-size: 12px;
+        }
+    }
+
+    &__btn {
+        margin: 58px auto 0px auto;
+
+        @include laptop {
+            margin-top: 40px;
+        }
+
+        @include tablet {
+            margin-top: 30px;
+        }
+
+        @include mobile {
+            margin-top: 20px;
+        }
+
+        @include mobile-small {
+            margin-top: 12px;
+        }
+    }
+}

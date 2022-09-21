@@ -1,0 +1,71 @@
+.clients {
+    padding-top: 105px;
+
+    @include laptop {
+        padding-top: 80px;
+    }
+
+    @include laptop {
+        padding-top: 55px;
+    }
+
+    @include tablet {
+        padding-top: 40px;
+    }
+
+    @include mobile {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        padding-top: 15px;
+    }
+
+    &__text {
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #9e9e9e;
+        max-width: 356px;
+        margin: 0 auto;
+
+        @include tablet {
+            font-size: 15px;
+        }
+
+        @include mobile-small {
+            font-size: 12px;
+        }
+    }
+
+    &__items {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include laptop {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        @include tablet {
+            margin-top: 40px;
+        }
+
+        @include mobile-small {
+            gap: 8px;
+            margin-top: 22px;
+        }
+    }
+
+    &_img {
+        @include mobile {
+            height: 20%;
+            width: 20%;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import "base/mixins-media";
+@import "base/variables";
+@import "blocks/titles";
+@import "blocks/menu";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/carousel";
+@import "blocks/clients";
+@import "blocks/work";
+@import "blocks/testimonial";
+@import "blocks/prices";
+@import "blocks/catalog";
+@import "blocks/services";
+@import "blocks/faq";
+@import "blocks/cta";
+@import "blocks/footer";
+@import "blocks/rustcar";
+
+* {
+    // margin: 0;
+    // padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+
+    @include pc {
+        max-width: 960px;
+    }
+
+    @include laptop {
+        max-width: 720px;
+    }
+
+    @include tablet {
+        max-width: 540px;
+    }
+
+    @include mobile {
+        // max-width: 320px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    @include mobile-small {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+.divider {
+    width: 1130px;
+    height: 1px;
+    background-color: #eeeeee;
+    margin: 104px auto 0 auto;
+
+    @include pc {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+        width: 100%;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    &_footer {
+        margin-top: 21px;
+
+        @include pc {
+            margin-top: 21px;
+        }
+
+        @include laptop {
+            margin-top: 21px;
+        }
+
+        @include tablet {
+            margin-top: 21px;
+        }
+    }
+}

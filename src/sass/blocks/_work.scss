@@ -1,0 +1,132 @@
+.work {
+    margin-top: 105px;
+
+    @include pc {
+        margin-top: 80px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+    }
+
+    &__text {
+        margin: 0 auto;
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #9e9e9e;
+
+        @include tablet {
+            font-size: 15px;
+        }
+    }
+
+    &__title {
+        margin-top: 11px;
+    }
+
+    &__elements {
+        margin-top: 61px;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        gap: 17px;
+
+        @include tablet {
+            margin-top: 30px;
+            flex-direction: column;
+            align-items: center;
+            gap: 17px;
+        }
+    }
+
+    &__item {
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include pc {
+            max-width: 260px;
+        }
+    }
+
+    &__number {
+        font-family: $pt-fonts;
+        font-weight: 700;
+        font-size: 57px;
+        // line-height: 85px;
+        text-align: center;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_blue {
+            color: $blue;
+            background-color: $light-blue;
+        }
+        &_orange {
+            color: $orange;
+            background-color: $light-orange;
+        }
+        &_green {
+            color: $green;
+            background-color: $light-green;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 30px;
+        font-family: "PT Serif";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+
+        @include tablet {
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        &_blue {
+            color: $blue;
+        }
+
+        &_orange {
+            color: $orange;
+        }
+
+        &_green {
+            color: $green;
+        }
+    }
+
+    &__descr {
+        margin-top: 15px;
+        font-family: $roboto-fonts;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        color: #616161;
+
+        @include tablet {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    }
+}

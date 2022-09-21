@@ -1,0 +1,76 @@
+.carousel {
+    padding-top: 104px;
+
+    @include pc {
+        padding-top: 80px;
+    }
+
+    @include laptop {
+        padding-top: 55px;
+    }
+
+    @include tablet {
+        padding-top: 40px;
+    }
+
+    @include mobile-small {
+        padding-top: 15px;
+    }
+
+    &__inner {
+        position: relative;
+        // width: 753px;
+        margin: 0 auto;
+
+        width: 1140px;
+        // margin: 0 auto;
+
+        @include pc {
+            max-width: 960px;
+        }
+
+        @include laptop {
+            max-width: 720px;
+        }
+
+        @include tablet {
+            max-width: 540px;
+        }
+
+        @include mobile {
+            // max-width: 320px;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        @include mobile-small {
+            width: 100%;
+            padding: 10px 20px;
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -57px;
+
+        border: none;
+        background-color: #fff;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .slick-next {
+        right: -52px;
+        left: auto;
+    }
+
+    .slick-slide {
+        margin-right: 16px;
+    }
+}

@@ -1,0 +1,90 @@
+.btn {
+    width: 242px;
+    height: 45px;
+    border-radius: 80px;
+    font-family: $roboto-fonts;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: all 0.6s;
+
+    @include tablet {
+        font-size: 15px;
+    }
+
+    @include mobile-small {
+        font-size: 12px;
+        width: 194px;
+        height: 22px;
+    }
+
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 24px;
+        border: 1px solid $orange;
+        background: #fff;
+        color: $orange;
+
+        &:hover {
+            background: $orange;
+            color: #fff;
+        }
+
+        &:hover path {
+            transition: all 0.2s;
+            fill: white;
+        }
+    }
+
+    &_prices {
+        width: 273px;
+
+        &_blue {
+            border: 1px solid $blue;
+            color: $blue;
+            background-color: $light-blue;
+
+            &:hover {
+                border: 1px solid $blue;
+                color: white;
+                background-color: $blue;
+            }
+        }
+
+        &_orange {
+            border: 1px solid $orange;
+            color: $orange;
+            background-color: $light-orange;
+
+            &:hover {
+                border: 1px solid $orange;
+                color: white;
+                background-color: $orange;
+            }
+        }
+
+        &_green {
+            border: 1px solid $green;
+            color: $green;
+            background-color: $light-green;
+
+            &:hover {
+                border: 1px solid $green;
+                color: white;
+                background-color: $green;
+            }
+        }
+
+        @include mobile-small {
+            font-size: 12px;
+            width: 145px;
+            height: 32px;
+        }
+    }
+}

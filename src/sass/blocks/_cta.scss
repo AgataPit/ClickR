@@ -1,0 +1,37 @@
+.cta {
+    margin-top: 105px;
+    padding-top: 71px;
+    padding-bottom: 71px;
+    background: $light-orange;
+    border-radius: 16px;
+
+    @include pc {
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    @include laptop {
+        margin-top: 55px;
+    }
+
+    @include tablet {
+        margin-top: 40px;
+    }
+
+    @include mobile-small {
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    &__title {
+        max-width: 797px;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        margin: 52px auto 0 auto;
+        background: $light-orange;
+    }
+}

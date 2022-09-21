@@ -1,0 +1,89 @@
+.rus__container {
+    width: 796px;
+    margin: 0 auto;
+
+    @include laptop {
+        width: 368px;
+    }
+
+    @include mobile {
+        width: 300px;
+    }
+
+    .ruscar__wrapper {
+        // margin-right: 8px;
+        // margin-left: 8px;
+
+        img {
+            width: 368px;
+            height: 368px;
+
+            @include laptop {
+                width: 362px;
+                height: 362px;
+            }
+
+            @include mobile {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        border: none;
+        background: none;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include mobile {
+            top: 110%;
+        }
+    }
+
+    .slick-prev {
+        left: -5%;
+
+        @include laptop {
+            left: -15%;
+        }
+
+        @include mobile {
+            left: 20%;
+        }
+    }
+
+    .slick-next {
+        right: -5%;
+
+        @include laptop {
+            right: -15%;
+        }
+
+        @include mobile {
+            right: 20%;
+        }
+    }
+
+    .slick-slide {
+        margin: 0 15px;
+        width: 368px;
+        height: 368px;
+
+        @include laptop {
+            width: 362px;
+            height: 362px;
+        }
+
+        @include mobile {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}

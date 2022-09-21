@@ -1,0 +1,25 @@
+.title {
+    margin: 0;
+    font-family: $pt-fonts;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 120%;
+    text-align: center;
+    color: #212121;
+
+    @include laptop {
+        font-size: 50px;
+    }
+
+    @include tablet {
+        font-size: 40px;
+    }
+
+    @include mobile {
+        font-size: 32px;
+    }
+
+    @include mobile-small {
+        font-size: 25px;
+    }
+}
