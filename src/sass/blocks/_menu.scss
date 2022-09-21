@@ -47,11 +47,11 @@
             left: -257px;
             z-index: 10;
 
-            @include mobile {
-                left: -170px;
-            }
+            // @include mobile {
+            //     left: -170px;
+            // }
 
-            @include mobile-small {
+            @include mobile {
                 top: -50px;
                 left: -143px;
                 width: 280px;
