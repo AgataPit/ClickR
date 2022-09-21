@@ -48,7 +48,7 @@ footer {
                 justify-content: center;
             }
 
-            @include mobile-small {
+            @include mobile {
                 flex-wrap: wrap;
             }
 
