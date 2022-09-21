@@ -27,7 +27,7 @@
         gap: 10px;
         // margin-right: 30px;
 
-        @include mobile-small {
+        @include mobile {
             flex-direction: column;
             align-items: center;
         }
@@ -39,7 +39,7 @@
         flex-direction: column;
         align-items: flex-start;
 
-        @include mobile-small {
+        @include mobile {
             align-items: center;
         }
     }
@@ -59,12 +59,12 @@
             height: 35px;
         }
 
-        @include mobile {
-            width: 30px;
-            height: 30px;
-        }
+        // @include mobile {
+        //     width: 30px;
+        //     height: 30px;
+        // }
 
-        @include mobile-small {
+        @include mobile {
             width: 20px;
             height: 20px;
         }
@@ -92,7 +92,7 @@
             margin-top: 12px;
         }
 
-        @include mobile-small {
+        @include mobile {
             font-size: 13px;
             text-align: center;
         }
@@ -193,11 +193,13 @@
         }
 
         @include mobile {
-            top: 176px;
+            top: 328px;
+            left: 200px;
         }
 
         @include mobile-small {
             top: 265px;
+            left: 30%;
         }
     }
 
@@ -216,12 +218,14 @@
         }
 
         @include mobile {
-            top: 176px;
+            top: 328px;
+            left: 265px;
         }
 
         @include mobile-small {
             top: 265px;
-            left: 279px;
+            right: -30%;
+            left: 0;
         }
     }
 
