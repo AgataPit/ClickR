@@ -193,8 +193,8 @@
         }
 
         @include mobile {
-            top: 328px;
-            left: 200px;
+            top: 105%;
+            left: 43%;
         }
 
         @include mobile-small {
@@ -218,8 +218,9 @@
         }
 
         @include mobile {
-            top: 328px;
-            left: 265px;
+            top: 105%;
+            right: -4%;
+            left: 0;
         }
 
         @include mobile-small {
