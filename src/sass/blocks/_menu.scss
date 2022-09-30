@@ -30,6 +30,7 @@
     &__items {
         width: 756px;
         transition: all 0.6s;
+        z-index: 10;
 
         @include laptop {
             position: absolute;
@@ -45,7 +46,6 @@
         &_active {
             top: -40px;
             left: -257px;
-            z-index: 10;
 
             // @include mobile {
             //     left: -170px;

@@ -56,7 +56,7 @@ footer {
                 max-width: 112px;
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
 
                 @include pc {
                     max-width: 157px;
